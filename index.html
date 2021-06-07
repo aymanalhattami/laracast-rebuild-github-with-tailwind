@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebuild GitHub with Tailwind</title>
+
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+
+<body>
+    <main>
+        <div class="text-gray-900 text-sm">
+            <nav class="bg-gray-900 text-white px-4 py-3 flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <a href="" class="text-white hover:text-gray-400">
+                        <img src="images/social-github.png" class="w-10 h-10 rounded-full" alt="">
+                    </a>
+                    <div class="relative">
+                        <input type="text" class="rounded bg-gray-900 placeholder-gray-500 px-3 py-1 border border-gray-700 w-56" placeholder="Search or jump ...">
+                        <div class="absolute top-0 right-0 flex items-center h-full">
+                            <div class="border border-gray-600 rounded text-xs text-gray-400 px-2 mr-2">/</div>
+                        </div>
+                    </div>
+                    <ul class="flex items-center font-semibold space-x-4">
+                        <li><a class="hover:text-gray-400" href="#">Pull Request</a></li>
+                        <li><a class="hover:text-gray-400" href="#">Issues</a></li>
+                        <li><a class="hover:text-gray-400" href="#">Marketplace</a></li>
+                        <li><a class="hover:text-gray-400" href="#">Explore</a></li>
+                    </ul>
+                </div>
+                <div class="flex items-center space-x-4 text-white">
+                    <a href="#" class="relative hover:text-gray-400">
+                        <i class="fa fa-bell" aria-hidden="true"></i>
+                        <div class="bg-blue-600 rounded-full w-2 h-2 absolute top-0 right-0"></div>
+                    </a>
+                    <a href="#" class="flex items-center space-x-1 hover:text-gray-400">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        <i class="fa fa-chevron-down" style="font-size: 0.7em;" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="flex items-center space-x-1 hover:text-gray-400">
+                        <img src="images/avatar.png" class="w-5 h-5 rounded-full" alt="">
+                        <i class="fa fa-chevron-down" style="font-size: 0.7em;" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </nav> <!-- end nav -->
+
+            <div class="repo-stats flex items-center justify-between px-8 py-4 bg-gray-100">
+                <div class="flex items-center">
+                    <i class="fa fa-project-diagram" aria-hidden="true"></i>
+                    <div class="flex items-center text-xl ml-2">
+                        <a href="#" class="text-blue-600 mr-1 hover:underline">Tailwindcss</a>
+                        <span>/</span>
+                        <a href="#" class="text-blue-600 ml-1 font-semibold hover:underline">Tailwindcss</a>
+                    </div>
+                </div>
+
+                <div class="flex space-x-2">
+                    <div class="flex items-center text-xs">
+                        <button class="border border-gray-400 rounded rounded-r-none px-3 py-1 space-x-2 flex items-center bg-gray-100">
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <div>Watch</div>
+                            <i class="fa fa-chevron-down" style="font-size: 0.7em;" aria-hidden="true"></i>
+                        </button>
+                        <a href="#" class="border border-gray-400 rounded rounded-l-none border-l-0 font-semibold px-3 py-1 hover:text-blue-600">430</a>
+                    </div>
+                    <div class="flex items-center text-xs">
+                        <button class="border border-gray-400 rounded rounded-r-none px-3 py-1 space-x-2 flex items-center bg-gray-100">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <div>Star</div>
+                        </button>
+                        <a href="#" class="border border-gray-400 rounded rounded-l-none border-l-0 font-semibold px-3 py-1 hover:text-blue-600">25.3k</a>
+                    </div>
+                    <div class="flex items-center text-xs">
+                        <button class="border border-gray-400 rounded rounded-r-none px-3 py-1 space-x-2 flex items-center bg-gray-100">
+                            <i class="fa fa-project-diagram" aria-hidden="true"></i>
+                            <div>Fork</div>
+                        </button>
+                        <a href="#" class="border border-gray-400 rounded rounded-l-none border-l-0 font-semibold px-3 py-1 hover:text-blue-600">1.2k</a>
+                    </div>
+                </div>
+            </div> <!-- end repo-stats -->
+
+            <ul class="repo-nav border-b border-gray-400 flex items-center px-8 pt-4 bg-gray-100">
+                <li class="font-semibold">
+                    <a href="#" class="flex items-center border-b-2 border-red-500 px-4 pb-3 space-x-1 text-xs">
+                        <i class="fa fa-code" aria-hidden="true"></i>
+                        <span>Code</span>
+                    </a>
+                </li>
+                <li class="font-semibold">
+                    <a href="#" class="flex items-center border-b-2 border-transparent px-4 pb-3 space-x-1 text-xs hover:border-gray-400 transition ease-in-out duration-150">
+                        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                        <span>Issues</span>
+                        <span class="bg-gray-300 rounded-2xl px-2 text-xs">106</span>
+                    </a>
+                </li> 
+                <li class="font-semibold">
+                    <a href="#" class="flex items-center border-b-2 border-transparent px-4 pb-3 space-x-1 text-xs hover:border-gray-400 transition ease-in-out duration-150">
+                        <i class="fa fa-project-diagram" aria-hidden="true"></i>
+                        <span>Pull Requests</span>
+                        <span class="bg-gray-300 rounded-2xl px-2 text-xs">25</span>
+                    </a>
+                </li> 
+                <li class="font-semibold">
+                    <a href="#" class="flex items-center border-b-2 border-transparent px-4 pb-3 space-x-1 text-xs hover:border-gray-400 transition ease-in-out duration-150">
+                        <i class="fa fa-comments" aria-hidden="true"></i>
+                        <span>Discussions</span>
+                    </a>
+                </li>
+                <li class="font-semibold">
+                    <a href="#" class="flex items-center border-b-2 border-transparent px-4 pb-3 space-x-1 text-xs hover:border-gray-400 transition ease-in-out duration-150">
+                        <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        <span>Actions</span>
+                    </a>
+                </li>
+                <li class="font-semibold">
+                    <a href="#" class="flex items-center border-b-2 border-transparent px-4 pb-3 space-x-1 text-xs hover:border-gray-400 transition ease-in-out duration-150">
+                        <i class="fa fa-fist-raised" aria-hidden="true"></i>
+                        <span>Security</span>
+                    </a>
+                </li>
+                <li class="font-semibold">
+                    <a href="#" class="flex items-center border-b-2 border-transparent px-4 pb-3 space-x-1 text-xs hover:border-gray-400 transition ease-in-out duration-150">
+                        <i class="fa fa-chart-line" aria-hidden="true"></i>
+                        <span>Insight</span>
+                    </a>
+                </li>
+            </ul> <!-- end repo-nav -->
+
+            <div class="container mx-auto my-8 flex">
+                <div class="file-explorer-container w-3/4 pr-6">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                            <ul class="flex items-center space-x-2">
+                                <li class="font-semibold">
+                                    <a href="#" class="flex items-center border rounded px-4 py-1 space-x-1 hover:bg-gray-100">
+                                        <i class="fa fa-project-diagram text-xs" aria-hidden="true"></i>
+                                        <span class="font-semibold">master</span>
+                                        <i class="fa fa-chevron-down text-xs" style="font-size: 0.7em;" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="font-semibold">
+                                    <a href="#" class="flex items-center rounded px-4 py-1 space-x-1 text-xs hover:text-blue-700 transition durantion-500">
+                                        <i class="fa fa-project-diagram" aria-hidden="true"></i>
+                                        <span>25</span>
+                                        <span>branches</span>
+                                    </a>
+                                </li>
+                                <li class="font-semibold">
+                                    <a href="#" class="flex items-center rounded px-4 py-1 space-x-1 text-xs hover:text-blue-700 transition durantion-500">
+                                        <i class="fa fa-tags" aria-hidden="true"></i>
+                                        <span>79</span>
+                                        <span>tags</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <ul class="flex items-center space-x-2">
+                                <li class="font-semibold">
+                                    <a href="#" class="flex items-center border rounded px-4 py-1 space-x-1 text-xs hover:bg-gray-100">
+                                        <span>Go to file</span>
+                                    </a>
+                                </li>
+                                <li class="font-semibold">
+                                    <a href="#" class="flex items-center border rounded px-4 py-1 space-x-1 text-xs hover:bg-gray-100">
+                                        <span>Add file</span>
+                                        <i class="fa fa-chevron-down text-xs" style="font-size: 0.7em;" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="font-semibold">
+                                    <a href="#" class="flex items-center border rounded px-4 py-1 space-x-1 text-xs text-white bg-green-700">
+                                        <i class="fa fa-download text-xs" style="font-size: 0.7em;" aria-hidden="true"></i>
+                                        <span>Code</span>
+                                        <i class="fa fa-chevron-down" style="font-size: 0.7em;" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="commits-container bg-blue-100 rounded-md rounded-b-none border border-blue-200 border-b-0 flex items-center justify-between mt-5 px-5 py-3">
+                        <div class="flex items-center space-x-2">
+                            <img src="images/avatar.png" class="rounded w-6 h-6" />
+                            <a href="#" class="font-semibold transition duration-400 tracking-tighter hover:underline">Aymen Mohammed</a>
+                            <a href="#" class="font-semibold transition duration-400 tracking-tighter hover:underline hover:text-blue-900">1.5.1</a>
+                        </div>
+                        <div class="flex items-end space-x-2">
+                            <i class="fa fa-check text-xs"></i>
+                            <a href="#" class="text-xs font-mono hover:underline">da070bd</a>
+                            <a href="#" class="hover:underline">6 days age</a>
+                            <a href="#" class="hover:text-blue-500">
+                                <i class="fa fa-clock"></i>
+                                <span class="font-semibold">3,040</span>
+                                <span>commits</span>
+                            </a>
+                        </div>
+                    </div> <!-- commits-container -->
+
+                    <div class="file-explorer rounded-md rounded-t-none border border-gray-400 text-gray-700 divide-y divide-gray-400">
+                        <div class="flex justify-between px-4 py-2 font-semibold hover:bg-gray-200">
+                            <div class="w-4/12 flex items-center space-x-1">
+                                <a href="#">
+                                    <i class="fa fa-folder text-blue-500"></i>
+                                    <span class="hover:underline hover:text-blue-500">.github</span>
+                                </a>
+                            </div>
+                            <a href="#" class="w-6/12 hover:underline hover:text-blue-500">first commit</a>
+                            <div class="w-2/12 text-right">11 days ago</div>
+                        </div>
+                        <div class="flex justify-between px-4 py-2 font-semibold hover:bg-gray-200">
+                            <div class="w-4/12 flex items-center space-x-1">
+                                <a href="#">
+                                    <i class="fa fa-folder text-blue-500"></i>
+                                    <span class="hover:underline hover:text-blue-500">__tests__</span>
+                                </a>
+                            </div>
+                            <a href="#" class="w-6/12 hover:underline hover:text-blue-500">Remove Stale test</a>
+                            <div class="w-2/12 text-right">20 days ago</div>
+                        </div>
+                        <div class="flex justify-between px-4 py-2 font-semibold hover:bg-gray-200">
+                            <div class="w-4/12 flex items-center space-x-1">
+                                <a href="#">
+                                    <i class="fa fa-folder text-blue-500"></i>
+                                    <span class="hover:underline hover:text-blue-500">app</span>
+                                </a>
+                            </div>
+                            <a href="#" class="w-6/12 hover:underline hover:text-blue-500">add app folder to git</a>
+                            <div class="w-2/12 text-right">21 days ago</div>
+                        </div>
+                        <div class="flex justify-between px-4 py-2 font-semibold hover:bg-gray-200">
+                            <div class="w-4/12 flex items-center space-x-1">
+                                <a href="#">
+                                    <i class="fa fa-folder text-blue-500"></i>
+                                    <span class="hover:underline hover:text-blue-500">bootstrap</span>
+                                </a>
+                            </div>
+                            <a href="#" class="w-6/12 hover:underline hover:text-blue-500">Add bootstrap folder to github</a>
+                            <div class="w-2/12 text-right">5 days ago</div>
+                        </div>
+                        <div class="flex justify-between px-4 py-2 font-semibold hover:bg-gray-200">
+                            <div class="w-4/12 flex items-center space-x-1">
+                                <a href="#">
+                                    <i class="fa fa-folder text-blue-500"></i>
+                                    <span class="hover:underline hover:text-blue-500">Database</span>
+                                </a>
+                            </div>
+                            <a href="#" class="w-6/12 hover:underline hover:text-blue-500 truncate">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur qui fugiat possimus aliquam. </a>
+                            <div class="w-2/12 text-right">15 days ago</div>
+                        </div>
+                        <div class="flex justify-between px-4 py-2 font-semibold hover:bg-gray-200">
+                            <div class="w-4/12 flex items-center space-x-1">
+                                <a href="#">
+                                    <i class="fa fa-folder text-blue-500"></i>
+                                    <span class="hover:underline hover:text-blue-500">resources</span>
+                                </a>
+                            </div>
+                            <a href="#" class="w-6/12 hover:underline hover:text-blue-500">add app resources to git</a>
+                            <div class="w-2/12 text-right">6 days ago</div>
+                        </div>
+                        <div class="flex justify-between px-4 py-2 font-semibold hover:bg-gray-200">
+                            <div class="w-4/12 flex items-center space-x-1">
+                                <a href="#">
+                                    <i class="fa fa-file"></i>
+                                    <span class="hover:underline hover:text-blue-500">.editorconfig</span>
+                                </a>
+                            </div>
+                            <a href="#" class="w-6/12 hover:underline hover:text-blue-500">add app file to git</a>
+                            <div class="w-2/12 text-right">21 days ago</div>
+                        </div>
+                        <div class="flex justify-between px-4 py-2 font-semibold hover:bg-gray-200">
+                            <div class="w-4/12 flex items-center space-x-1">
+                                <a href="#">
+                                    <i class="fa fa-file"></i>
+                                    <span class="hover:underline hover:text-blue-500">.env</span>
+                                </a>
+                            </div>
+                            <a href="#" class="w-6/12 hover:underline hover:text-blue-500 truncate">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur qui fugiat possimus aliquam. </a>
+                            <div class="w-2/12 text-right">5 days ago</div>
+                        </div>
+                        <div class="flex justify-between px-4 py-2 font-semibold hover:bg-gray-200">
+                            <div class="w-4/12 flex items-center space-x-1">
+                                <a href="#">
+                                    <i class="fa fa-file"></i>
+                                    <span class="hover:underline hover:text-blue-500">composer.json</span>
+                                </a>
+                            </div>
+                            <a href="#" class="w-6/12 hover:underline hover:text-blue-500">Remove Stale test</a>
+                            <div class="w-2/12 text-right">15 days ago</div>
+                        </div>
+                        <div class="flex justify-between px-4 py-2 font-semibold hover:bg-gray-200">
+                            <div class="w-4/12 flex items-center space-x-1">
+                                <a href="#">
+                                    <i class="fa fa-file"></i>
+                                    <span class="hover:underline hover:text-blue-500">package.json</span>
+                                </a>
+                            </div>
+                            <a href="#" class="w-6/12 hover:underline hover:text-blue-500">add app resources to git</a>
+                            <div class="w-2/12 text-right">6 days ago</div>
+                        </div>
+                        <div class="flex justify-between px-4 py-2 font-semibold hover:bg-gray-200">
+                            <div class="w-4/12 flex items-center space-x-1">
+                                <a href="#">
+                                    <i class="fa fa-file"></i>
+                                    <span class="hover:underline hover:text-blue-500">web.back.js</span>
+                                </a>
+                            </div>
+                            <a href="#" class="w-6/12 hover:underline hover:text-blue-500">add app resources to git</a>
+                            <div class="w-2/12 text-right">6 days ago</div>
+                        </div>
+                    </div> <!-- end file-explorer -->
+                </div>
+                <div class="sidebar w-1/4">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur qui fugiat possimus aliquam. Ipsum, praesentium aspernatur fugiat nihil sit autem sequi odit dicta minima, incidunt impedit dolorum magnam quos assumenda.
+                </div>
+            </div> 
+        </div>
+    </main>
+</body>
+
+</html>
