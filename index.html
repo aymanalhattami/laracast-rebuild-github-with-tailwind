@@ -12,20 +12,20 @@
 </head>
 
 <body>
-    <main>
+    <main class="">
         <div class="text-gray-900 text-sm">
             <nav class="bg-gray-900 text-white px-4 py-3 flex items-center justify-between">
                 <div class="flex items-center space-x-4">
                     <a href="" class="text-white hover:text-gray-400">
                         <img src="images/social-github.png" class="w-10 h-10 rounded-full" alt="">
                     </a>
-                    <div class="relative">
+                    <div class="relative hidden lg:block">
                         <input type="text" class="rounded bg-gray-900 placeholder-gray-500 px-3 py-1 border border-gray-700 w-56" placeholder="Search or jump ...">
                         <div class="absolute top-0 right-0 flex items-center h-full">
                             <div class="border border-gray-600 rounded text-xs text-gray-400 px-2 mr-2">/</div>
                         </div>
                     </div>
-                    <ul class="flex items-center font-semibold space-x-4">
+                    <ul class="hidden lg:flex items-center font-semibold space-x-4">
                         <li><a class="hover:text-gray-400" href="#">Pull Request</a></li>
                         <li><a class="hover:text-gray-400" href="#">Issues</a></li>
                         <li><a class="hover:text-gray-400" href="#">Marketplace</a></li>
@@ -48,7 +48,7 @@
                 </div>
             </nav> <!-- end nav -->
 
-            <div class="repo-stats flex items-center justify-between px-8 py-4 bg-gray-100">
+            <div class="repo-stats flex flex-col lg:flex-row items-center justify-between px-8 py-4 bg-gray-100">
                 <div class="flex items-center">
                     <i class="fa fa-project-diagram" aria-hidden="true"></i>
                     <div class="flex items-center text-xl ml-2">
@@ -58,7 +58,7 @@
                     </div>
                 </div>
 
-                <div class="flex space-x-2">
+                <div class="flex space-x-2 mt-5 lg:mt-0">
                     <div class="flex items-center text-xs">
                         <button class="border border-gray-400 rounded rounded-r-none px-3 py-1 space-x-2 flex items-center bg-gray-100">
                             <i class="fa fa-eye" aria-hidden="true"></i>
@@ -105,25 +105,25 @@
                         <span class="bg-gray-300 rounded-2xl px-2 text-xs">25</span>
                     </a>
                 </li> 
-                <li class="font-semibold">
+                <li class="font-semibold hidden lg:block">
                     <a href="#" class="flex items-center border-b-2 border-transparent px-4 pb-3 space-x-1 text-xs hover:border-gray-400 transition ease-in-out duration-150">
                         <i class="fa fa-comments" aria-hidden="true"></i>
                         <span>Discussions</span>
                     </a>
                 </li>
-                <li class="font-semibold">
+                <li class="font-semibold hidden lg:block">
                     <a href="#" class="flex items-center border-b-2 border-transparent px-4 pb-3 space-x-1 text-xs hover:border-gray-400 transition ease-in-out duration-150">
                         <i class="fa fa-play-circle" aria-hidden="true"></i>
                         <span>Actions</span>
                     </a>
                 </li>
-                <li class="font-semibold">
+                <li class="font-semibold hidden lg:block">
                     <a href="#" class="flex items-center border-b-2 border-transparent px-4 pb-3 space-x-1 text-xs hover:border-gray-400 transition ease-in-out duration-150">
                         <i class="fa fa-fist-raised" aria-hidden="true"></i>
                         <span>Security</span>
                     </a>
                 </li>
-                <li class="font-semibold">
+                <li class="font-semibold hidden lg:block">
                     <a href="#" class="flex items-center border-b-2 border-transparent px-4 pb-3 space-x-1 text-xs hover:border-gray-400 transition ease-in-out duration-150">
                         <i class="fa fa-chart-line" aria-hidden="true"></i>
                         <span>Insight</span>
@@ -131,8 +131,8 @@
                 </li>
             </ul> <!-- end repo-nav -->
 
-            <div class="container mx-auto my-8 flex">
-                <div class="file-explorer-container w-3/4 pr-6">
+            <div class="container mx-auto my-8 flex flex-col lg:flex-row">
+                <div class="file-explorer-container w-full lg:w-3/4 lg:pr-6">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center space-x-2">
                             <ul class="flex items-center space-x-2">
@@ -143,14 +143,14 @@
                                         <i class="fa fa-chevron-down text-xs" style="font-size: 0.7em;" aria-hidden="true"></i>
                                     </a>
                                 </li>
-                                <li class="font-semibold">
+                                <li class="font-semibold hidden lg:block">
                                     <a href="#" class="flex items-center rounded px-4 py-1 space-x-1 text-xs hover:text-blue-700 transition durantion-500">
                                         <i class="fa fa-project-diagram" aria-hidden="true"></i>
                                         <span>25</span>
                                         <span>branches</span>
                                     </a>
                                 </li>
-                                <li class="font-semibold">
+                                <li class="font-semibold hidden lg:block">
                                     <a href="#" class="flex items-center rounded px-4 py-1 space-x-1 text-xs hover:text-blue-700 transition durantion-500">
                                         <i class="fa fa-tags" aria-hidden="true"></i>
                                         <span>79</span>
@@ -159,7 +159,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="flex items-center space-x-2">
+                        <div class="hidden lg:flex items-center space-x-2">
                             <ul class="flex items-center space-x-2">
                                 <li class="font-semibold">
                                     <a href="#" class="flex items-center border rounded px-4 py-1 space-x-1 text-xs hover:bg-gray-100">
@@ -189,14 +189,14 @@
                             <a href="#" class="font-semibold transition duration-400 tracking-tighter hover:underline">Aymen Mohammed</a>
                             <a href="#" class="font-semibold transition duration-400 tracking-tighter hover:underline hover:text-blue-900">1.5.1</a>
                         </div>
-                        <div class="flex items-end space-x-2">
+                        <div class="flex items-center space-x-2">
                             <i class="fa fa-check text-xs"></i>
-                            <a href="#" class="text-xs font-mono hover:underline">da070bd</a>
+                            <a href="#" class="text-xs font-mono hover:underline hidden lg:block">da070bd</a>
                             <a href="#" class="hover:underline">6 days age</a>
                             <a href="#" class="hover:text-blue-500">
                                 <i class="fa fa-clock"></i>
                                 <span class="font-semibold">3,040</span>
-                                <span>commits</span>
+                                <span class="hidden lg:inline-block">commits</span>
                             </a>
                         </div>
                     </div> <!-- commits-container -->
@@ -209,8 +209,8 @@
                                     <span class="hover:underline hover:text-blue-500">.github</span>
                                 </a>
                             </div>
-                            <a href="#" class="w-6/12 hover:underline hover:text-blue-500">first commit</a>
-                            <div class="w-2/12 text-right">11 days ago</div>
+                            <a href="#" class="w-6/12 lg:block hidden lg:block hover:underline hover:text-blue-500">first commit</a>
+                            <div class="w-6/12 lg:w-2/12 text-right">11 days ago</div>
                         </div>
                         <div class="flex justify-between px-4 py-2 font-semibold hover:bg-gray-200">
                             <div class="w-4/12 flex items-center space-x-1">
@@ -219,8 +219,8 @@
                                     <span class="hover:underline hover:text-blue-500">__tests__</span>
                                 </a>
                             </div>
-                            <a href="#" class="w-6/12 hover:underline hover:text-blue-500">Remove Stale test</a>
-                            <div class="w-2/12 text-right">20 days ago</div>
+                            <a href="#" class="w-6/12 lg:block hidden hover:underline hover:text-blue-500">Remove Stale test</a>
+                            <div class="w-6/12 lg:w-2/12 text-right">20 days ago</div>
                         </div>
                         <div class="flex justify-between px-4 py-2 font-semibold hover:bg-gray-200">
                             <div class="w-4/12 flex items-center space-x-1">
@@ -229,8 +229,8 @@
                                     <span class="hover:underline hover:text-blue-500">app</span>
                                 </a>
                             </div>
-                            <a href="#" class="w-6/12 hover:underline hover:text-blue-500">add app folder to git</a>
-                            <div class="w-2/12 text-right">21 days ago</div>
+                            <a href="#" class="w-6/12 lg:block hidden hover:underline hover:text-blue-500">add app folder to git</a>
+                            <div class="w-6/12 lg:w-2/12 text-right">21 days ago</div>
                         </div>
                         <div class="flex justify-between px-4 py-2 font-semibold hover:bg-gray-200">
                             <div class="w-4/12 flex items-center space-x-1">
@@ -239,8 +239,8 @@
                                     <span class="hover:underline hover:text-blue-500">bootstrap</span>
                                 </a>
                             </div>
-                            <a href="#" class="w-6/12 hover:underline hover:text-blue-500">Add bootstrap folder to github</a>
-                            <div class="w-2/12 text-right">5 days ago</div>
+                            <a href="#" class="w-6/12 lg:block hidden hover:underline hover:text-blue-500">Add bootstrap folder to github</a>
+                            <div class="w-6/12 lg:w-2/12 text-right">5 days ago</div>
                         </div>
                         <div class="flex justify-between px-4 py-2 font-semibold hover:bg-gray-200">
                             <div class="w-4/12 flex items-center space-x-1">
@@ -249,8 +249,8 @@
                                     <span class="hover:underline hover:text-blue-500">Database</span>
                                 </a>
                             </div>
-                            <a href="#" class="w-6/12 hover:underline hover:text-blue-500 truncate">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur qui fugiat possimus aliquam. </a>
-                            <div class="w-2/12 text-right">15 days ago</div>
+                            <a href="#" class="w-6/12 lg:block hidden hover:underline hover:text-blue-500 truncate">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur qui fugiat possimus aliquam. </a>
+                            <div class="w-6/12 lg:w-2/12 text-right">15 days ago</div>
                         </div>
                         <div class="flex justify-between px-4 py-2 font-semibold hover:bg-gray-200">
                             <div class="w-4/12 flex items-center space-x-1">
@@ -259,8 +259,8 @@
                                     <span class="hover:underline hover:text-blue-500">resources</span>
                                 </a>
                             </div>
-                            <a href="#" class="w-6/12 hover:underline hover:text-blue-500">add app resources to git</a>
-                            <div class="w-2/12 text-right">6 days ago</div>
+                            <a href="#" class="w-6/12 lg:block hidden hover:underline hover:text-blue-500">add app resources to git</a>
+                            <div class="w-6/12 lg:w-2/12 text-right">6 days ago</div>
                         </div>
                         <div class="flex justify-between px-4 py-2 font-semibold hover:bg-gray-200">
                             <div class="w-4/12 flex items-center space-x-1">
@@ -269,8 +269,8 @@
                                     <span class="hover:underline hover:text-blue-500">.editorconfig</span>
                                 </a>
                             </div>
-                            <a href="#" class="w-6/12 hover:underline hover:text-blue-500">add app file to git</a>
-                            <div class="w-2/12 text-right">21 days ago</div>
+                            <a href="#" class="w-6/12 lg:block hidden hover:underline hover:text-blue-500">add app file to git</a>
+                            <div class="w-6/12 lg:w-2/12 text-right">21 days ago</div>
                         </div>
                         <div class="flex justify-between px-4 py-2 font-semibold hover:bg-gray-200">
                             <div class="w-4/12 flex items-center space-x-1">
@@ -279,8 +279,8 @@
                                     <span class="hover:underline hover:text-blue-500">.env</span>
                                 </a>
                             </div>
-                            <a href="#" class="w-6/12 hover:underline hover:text-blue-500 truncate">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur qui fugiat possimus aliquam. </a>
-                            <div class="w-2/12 text-right">5 days ago</div>
+                            <a href="#" class="w-6/12 lg:block hidden hover:underline hover:text-blue-500 truncate">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur qui fugiat possimus aliquam. </a>
+                            <div class="w-6/12 lg:w-2/12 text-right">5 days ago</div>
                         </div>
                         <div class="flex justify-between px-4 py-2 font-semibold hover:bg-gray-200">
                             <div class="w-4/12 flex items-center space-x-1">
@@ -289,8 +289,8 @@
                                     <span class="hover:underline hover:text-blue-500">composer.json</span>
                                 </a>
                             </div>
-                            <a href="#" class="w-6/12 hover:underline hover:text-blue-500">Remove Stale test</a>
-                            <div class="w-2/12 text-right">15 days ago</div>
+                            <a href="#" class="w-6/12 lg:block hidden hover:underline hover:text-blue-500">Remove Stale test</a>
+                            <div class="w-6/12 lg:w-2/12 text-right">15 days ago</div>
                         </div>
                         <div class="flex justify-between px-4 py-2 font-semibold hover:bg-gray-200">
                             <div class="w-4/12 flex items-center space-x-1">
@@ -299,8 +299,8 @@
                                     <span class="hover:underline hover:text-blue-500">package.json</span>
                                 </a>
                             </div>
-                            <a href="#" class="w-6/12 hover:underline hover:text-blue-500">add app resources to git</a>
-                            <div class="w-2/12 text-right">6 days ago</div>
+                            <a href="#" class="w-6/12 lg:block hidden hover:underline hover:text-blue-500">add app resources to git</a>
+                            <div class="w-6/12 lg:w-2/12 text-right">6 days ago</div>
                         </div>
                         <div class="flex justify-between px-4 py-2 font-semibold hover:bg-gray-200">
                             <div class="w-4/12 flex items-center space-x-1">
@@ -309,8 +309,8 @@
                                     <span class="hover:underline hover:text-blue-500">web.back.js</span>
                                 </a>
                             </div>
-                            <a href="#" class="w-6/12 hover:underline hover:text-blue-500">add app resources to git</a>
-                            <div class="w-2/12 text-right">6 days ago</div>
+                            <a href="#" class="w-6/12 lg:block hidden hover:underline hover:text-blue-500">add app resources to git</a>
+                            <div class="w-6/12 lg:w-2/12 text-right">6 days ago</div>
                         </div>
                     </div> <!-- end file-explorer -->
 
@@ -328,7 +328,7 @@
                         </p>
                     </div> <!-- end readme-container -->
                 </div>
-                <div class="sidebar w-1/4">
+                <div class="sidebar w-full lg:w-1/4 pl-6 lg:pl-0 mt-10 lg:mt-0">
                     <div class="about">
                         <h4 class="text-base font-semibold">About</h4>
                         <p class="text-base text-justify mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero accusantium tempora dolores provident culpa repellendus doloremque dicta aperiam id, est architecto iste optio alias nostrum quidem fuga beatae aliquam vel?</p>
@@ -429,7 +429,7 @@
                             </a>
                             <div class="mt-4 flex">
                                 <div class="w-10/12 h-2 rounded-md rounded-r-none bg-purple-700"></div>
-                                <div class="w-2/12 h-2 rounded-md rounded-l-none bg-yellow-400"></div>
+                                <div class="w-6/12 lg:w-2/12 h-2 rounded-md rounded-l-none bg-yellow-400"></div>
                             </div>
                             <ul class="mt-2 space-x-8 flex items-center text-xs">
                                 <li class="flex items-center">
@@ -452,8 +452,8 @@
                 </div> <!-- end sidebar -->
             </div> 
 
-            <footer class="container mx-auto text-xs border-1 border-gray-400 py-10 flex items-center justify-between">
-                <ul class="flex items-center space-x-12 font-semibold">
+            <footer class="container mx-auto text-xs border-1 border-gray-400 py-10 flex flex-col lg:flex-row items-center justify-between">
+                <ul class="flex items-center space-x-6 lg:space-x-8 font-semibold">
                     <li>&copy; 2021 GitHub, Inc.</li>
                     <li><a href="#" class="text-blue-600 hover:underline">Terms</a></li>
                     <li><a href="#" class="text-blue-600 hover:underline">Privacy</a></li>
@@ -461,8 +461,8 @@
                     <li><a href="#" class="text-blue-600 hover:underline">Status</a></li>
                     <li><a href="#" class="text-blue-600 hover:underline">Help</a></li>
                 </ul>
-                <img src="images/social-github.png" class="w-10 h-10 rounded-full" alt="">
-                <ul class="flex items-center space-x-12 font-semibold">
+                <img src="images/social-github.png" class="w-10 h-10 rounded-full hidden lg:block" alt="">
+                <ul class="flex items-center space-x-6 lg:space-x-8 font-semibold mt-5 lg:mt-0">
                     <li><a href="#" class="text-blue-600 hover:underline">Contact GitHub</a></li>
                     <li><a href="#" class="text-blue-600 hover:underline">Pricing</a></li>
                     <li><a href="#" class="text-blue-600 hover:underline">API</a></li>
